@@ -1,0 +1,155 @@
+:root{
+    --button-header: #3bb75e;
+    font-size: 16px;
+    --hover: #0ba4db;
+    --heading-color: #0d273c;
+    --navcolor: #f1fef4;
+    --white: rgb(255, 255, 255);
+    --side: #f8f6f6;
+    --font-family:"Graphik", -apple-system,
+                    BlinkMacSystemFont, "Segoe UI",
+                    Roboto, Helvetica, Arial, sans-serif, 
+                    "Apple Color Emoji",
+                    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--navcolor);
+    font-family: var(--font-family);
+}
+.pay-terminal{
+    background: var(--heading-color);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    align-items: center;
+
+}
+.nav1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.fa-solid{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.nav1 img{
+    margin-right: 15px;
+}
+.nav1 a{
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+.nav1 a:hover{
+    color: var(--hover);
+}
+.nav2{
+    font-size: 0.9rem;
+   
+}
+.nav2 a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    font-weight: 500;
+}
+#sign-up{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    background: var(--button-header);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 10px;
+  }  
+.dropdown-content .content{
+    display: flex;
+  }
+.dropdown-content .content .set1 .img-text{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 300px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.dropdown-content .content .set2{
+    background: var(--side);
+}
+.dropdown-content .content .set2, .dropdown-content .content .set1{
+    padding: 20px;
+   
+}
+.dropdown-content .content .set2 .text1{
+    padding-right: 20px;
+}
+.dropdown-content .content .set2 .growth{
+    padding-bottom: 40px;
+}
+.dropdown-content .content .set2 .text1 h3{
+    font-size: 0.6rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.dropdown-content .content .set2 .text1 p{
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.dropdown2{
+    position: relative;
+  display: inline-block;
+}
+.content-drop{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 2;
+    
+}
+.dropdown2:hover .content-drop{
+    display: block;
+    border-radius: 10px;
+}
+.content-drop p{
+   margin-bottom: 5px;
+    font-weight: 600;
+}
+
+p:hover{
+    color: var(--hover);
+}
+h3:hover{
+    color: var(--hover);
+}
+h4:hover{
+    color: var(--hover);
+}
+
